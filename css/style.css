@@ -1,0 +1,71 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial;
+  display: flex;
+}
+
+nav {
+  background-color: #111;
+  padding: 0 50px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline-block;
+  color: #fff;
+  transition: color 0.4s ease;
+}
+
+nav ul li:hover, nav p:hover {
+  color: #666;
+}
+
+.my-name {
+  color: #fff;
+  display: inline-block;
+  flex-basis: 35%;
+  font-size: 22px;
+  padding: 28px;
+}
+
+.nav-text li {
+  padding: 30px 14px;
+}
+
+.blank-space {
+  height: 800px;
+  background-color: #bbb;
+}
+
+main {
+  padding-top: 120px;
+}
+
+nav #thin-nav {
+  height: 200px;
+}
+
+@media screen and (max-width: 749px) {
+  nav {
+    flex-direction: column;
+  }
+  .nav-text ul li {
+    padding: 6px 6px 18px;
+  }
+  .my-name {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 409px) {
+  .nav-text ul li {
+    font-size: 13px;
+    padding: 6px 3px 18px;
+  }
+}
