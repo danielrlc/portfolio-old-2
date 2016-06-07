@@ -10,14 +10,13 @@ body {
 nav {
   background-color: #111;
   padding: 0 50px;
-  position: fixed;
-  width: 100%;
+  /*position: fixed;*/
+  /*width: 100%;*/
   display: flex;
-  align-items: center;
 }
 
 nav ul li {
-  display: inline-block;
+  /*display: inline-block;*/
   color: #fff;
   transition: color 0.4s ease;
 }
@@ -34,7 +33,15 @@ nav ul li:hover, nav p:hover {
   padding: 28px;
 }
 
-.nav-text li {
+.nav-text ul {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  justify-content: right;
+  float: right;
+}
+
+.nav-text ul li {
   padding: 30px 14px;
 }
 
